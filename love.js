@@ -1,7 +1,8 @@
 function onNavigation(a) {
+    FlowtimeNew.autoplay(true, 3000, true, false);
 	2 == a.progress && player.pause()
 }
-Flowtime.showProgress(!0), Flowtime.addEventListener("flowtimenavigation", onNavigation, !1), Flowtime.start(), $(function() {
+FlowtimeNew.showProgress(!0), FlowtimeNew.addEventListener("flowtimenavigation", onNavigation, !1), $(function() {
 	$(".nojavascript").remove(), setInterval(function() {
 		$(".showtip").removeClass("showtip").hide().siblings("span").addClass("showtip").fadeIn()
 	}, 5e3), $("#write-submit").click(function() {
