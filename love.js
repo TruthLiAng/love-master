@@ -1,6 +1,8 @@
 function onNavigation(a) {
     FlowtimeNew.autoplay(true, 3000, true, false);
-	2 == a.progress && player.pause()
+    var bgmMusic = document.getElementById("bgmMusic");
+    bgmMusic.play();
+	//2 == a.progress && player.pause()
 }
 FlowtimeNew.showProgress(!0), FlowtimeNew.addEventListener("flowtimenavigation", onNavigation, !1), $(function() {
 	$(".nojavascript").remove(), setInterval(function() {
